@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Check Box</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <h1>Check Box</h1>
+    <form>
+        <fieldset>
+            <legend>Selecting elements</legend>
+            <p>
+                <label for="chkEggs">Check boxes</label>
+                <input type="checkbox" id="chkEggs" value="greenEggs" />
+                <label for="chkEggs">Green Eggs</label>
+
+                <input type="checkbox" id="chkHam" value="ham" />
+                <label for="chkHam">Ham</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
