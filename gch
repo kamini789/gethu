@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>GCD Calculator</title>
+ <script>
+   function calculateGCD() {
+     var num1 = parseInt(document.getElementById("num1").value);
+     var num2 = parseInt(document.getElementById("num2").value);
+     while (num2 !== 0) {
+       var temp = num2;
+       num2 = num1 % num2;
+       num1 = temp;
+     }
+     document.getElementById("result").innerHTML = "GCD is: " + num1;
+   }
+ </script>
+</head>
+<body>
+ <h1>GCD Calculator</h1>
+ <p>Enter two numbers to find their GCD:</p>
+ <input type="number" id="num1" placeholder="Enter first number" required>
+ <input type="number" id="num2" placeholder="Enter second number" required>
+ <button onclick="calculateGCD()">Calculate GCD</button>
+ <p id="result"></p>
+</body>
+</html>
